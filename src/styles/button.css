@@ -1,0 +1,22 @@
+.button {
+    display: block;
+    border: none;
+    background-color: var(--color-primary);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    margin-block-end: 1rem;
+    font-weight: 500;
+    color: var(--white);
+}
+
+.button--remove {
+    background-color: var(--color-danger); 
+}
+
+.button--remove-small {
+    background: none;
+    padding: 0.25rem 0.5rem;
+    color: var(--color-danger);
+    display: inline-block;
+    margin: 0;
+}

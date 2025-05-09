@@ -1,0 +1,43 @@
+/* Form */
+.ingredients-form__button {
+    /* border-radius: 50%; */
+    width: 50px;
+    background-color: var(--color-primary);
+    color: var(--white);
+    border: none;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.ingredients-form__button svg {
+    transform: translateX(-0.1rem);
+}
+
+.ingredients-form__group {
+    display: flex;
+    align-items: stretch;
+    position: relative;
+    overflow: clip;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+    border-radius: 1.5rem;
+    margin-block-end: 1rem;
+}
+
+.ingredients-form__input {
+    border: none;
+    outline: thin;
+    padding: 0.75rem 4rem 0.75rem 1.5rem;
+}
+
+/* Ingredients on hand */
+
+.ingredients__list {
+    margin-block-end: 0.5rem;
+}
