@@ -1,0 +1,23 @@
+.get-recipe__box {
+    background-color: var(--color-secondary);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+    margin-block-end: 2rem;
+}
+
+.get-recipe__flex {
+    display: flex;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    column-gap: 2rem;
+}
+
+.get-recipe__text {
+    flex: 75%
+}
+
+.get-recipe__box p, .button {
+    margin: 0;
+}

@@ -3,6 +3,8 @@
 @import './styles/ingredients.css';
 @import './styles/footer.css';
 @import './styles/generated-recipe.css';
+@import './styles/loader.css';
+@import './styles/get-recipe.css';
 
 :root {
     --color-primary: #457b9d;
@@ -43,7 +45,6 @@ ol {
     background-color: #f8f8f8;
     padding: 2rem 3rem;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
-    /* width: 100%; */
     max-width: 800px;
     border-radius: 0.5rem;
 }
