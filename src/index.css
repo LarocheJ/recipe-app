@@ -5,6 +5,7 @@
 @import './styles/generated-recipe.css';
 @import './styles/loader.css';
 @import './styles/get-recipe.css';
+@import './styles/print.css';
 
 :root {
     --color-primary: #457b9d;

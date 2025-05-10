@@ -1,0 +1,23 @@
+@media print {
+    body {
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    .header__title,
+    .ingredients-form,
+    .ingredients__container,
+    .get-recipe__box,
+    .generated-recipe__title,
+    .generated-recipe__footer,
+    footer {
+        display: none;
+    }
+
+    .wrapper {
+        max-width: 100% !important;
+        box-shadow: none !important;
+        border-radius: 0 !important;
+        padding: 1rem !important;
+    }
+}
