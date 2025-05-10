@@ -7,7 +7,7 @@ import GetRecipe from './components/GetRecipe'
 import { generateRecipe } from './ai'
 
 function App() {
-	const [ingredients, setIngredients] = React.useState(["oregano", "paprika", "salt"]);
+	const [ingredients, setIngredients] = React.useState([]);
 	const [recipeShown, setRecipeShown] = React.useState(false)
 	const [recipe, setRecipe] = React.useState("");
 	const [loading, setLoading] = React.useState(false)
@@ -29,7 +29,7 @@ function App() {
 	}
 
     function toggleRecipeShown() {
-        if( !recipeShown && !recipe ) {
+        if( !recipeShown ) {
             handleRecipe()
         } else {
             setRecipeShown(prevShown => !prevShown)
