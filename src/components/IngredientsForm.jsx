@@ -4,10 +4,11 @@ export default function ingredientsForm(props) {
 
         const formData = new FormData(event.target);
         const ingredient = formData.get("ingredient");
+        const ingredientArray = ingredient.split(",").map(item => item.trim()).filter(item => item !== "");
 
         if (ingredient) {
             props.setIngredients((prevIngredients) => {
-                return [...prevIngredients, ingredient];
+                return [...prevIngredients, ingredientArray].flat();
             });
 
             // Optionally clear the input field after adding
