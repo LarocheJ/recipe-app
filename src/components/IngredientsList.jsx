@@ -3,9 +3,9 @@ export default function IngredientsList(props) {
         props.setIngredients(prevIngredients => prevIngredients.filter(ingredient => ingredient !== ingredientToRemove))
     }
 
-    function removeAllIngredients() {
-        props.setIngredients([])
-    }
+    // function removeAllIngredients() {
+    //     props.setIngredients([])
+    // }
 
     return (
         <>
@@ -16,7 +16,7 @@ export default function IngredientsList(props) {
                         return <li key={index} className="ingredients__item">{ingredient} <button onClick={() => removeIngredient(ingredient)} className="button button--remove-small" title={`Remove ${ingredient} from the ingredients list`}>x</button></li>
                     })}
                 </ul>
-                <button className="button button--remove" onClick={removeAllIngredients}>Remove ingredients</button>
+                {/* <button className="button button--remove" onClick={removeAllIngredients}>Remove ingredients</button> */}
             </div> }
         </>
     )
