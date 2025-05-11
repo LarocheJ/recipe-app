@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import Header from './components/Header'
 import Footer from './components/Footer'
 import IngredientsForm from './components/IngredientsForm'
@@ -12,15 +12,16 @@ function App() {
 	const [recipe, setRecipe] = React.useState("");
 	const [loading, setLoading] = React.useState(false)
 	const [error, setError] = React.useState(null)
+	
 
 	async function handleRecipe() {
 		setLoading(true)
 		setError(null)
 		try {
 			const recipeText = await generateRecipe(ingredients);
-			setRecipe(recipeText);
-		} catch (err) {
-			console.log("Failed to generate recipe: ", err)
+			setRecipe(recipeText)
+		} catch (error) {
+			console.log("Failed to generate recipe: ", error)
 			setError("Failed to generate recipe. Please try again.")
 			setRecipe(null)
 		} finally {
@@ -29,12 +30,14 @@ function App() {
 	}
 
     function toggleRecipeShown() {
-        if( !recipeShown ) {
+        if( !recipeShown && !loading ) {
             handleRecipe()
         } else {
             setRecipeShown(prevShown => !prevShown)
         }
     }
+
+
 
 	return(
 		<>
@@ -46,6 +49,7 @@ function App() {
 					<GetRecipe 
 						list={ingredients} 
 						recipe={recipe} 
+						recipeShown={recipeShown} 
 						handleRecipe={handleRecipe} 
 						toggleRecipeShown={toggleRecipeShown} 
 						loading={loading} 

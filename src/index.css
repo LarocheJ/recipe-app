@@ -19,7 +19,9 @@
 }
 
 body {
-    background-color: var(--color-secondary);
+    /* background-color: var(--color-secondary); */
+    background: hsla(0, 0%, 100%, 1);
+    background: linear-gradient(150deg, hsla(0, 0%, 100%, 1) 0%, hsla(125, 63%, 93%, 1) 50%, hsla(125, 100%, 81%, 1) 100%);
     display: grid;
     place-content: center;
     min-height: 100vh;
@@ -45,7 +47,7 @@ ol {
 .wrapper {
     background-color: #f8f8f8;
     padding: 2rem 3rem;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.15);
     max-width: 800px;
     border-radius: 0.5rem;
 }
@@ -65,4 +67,9 @@ input {
     .wrapper {
         padding: 2rem 1.5rem;
     }
+}
+
+.color-danger {
+    color: var(--color-danger);
+    font-weight: 500;
 }
