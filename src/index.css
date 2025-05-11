@@ -20,8 +20,8 @@
 
 body {
     /* background-color: var(--color-secondary); */
-    background: hsla(0, 0%, 100%, 1);
-    background: linear-gradient(150deg, hsla(0, 0%, 100%, 1) 0%, hsla(125, 63%, 93%, 1) 50%, hsla(125, 100%, 81%, 1) 100%);
+    /* background: hsla(0, 0%, 100%, 1); */
+    background: linear-gradient(150deg, hsla(0, 0%, 100%, 1) 0%, rgb(253, 252, 247) 50%, rgb(242, 221, 196) 100%);
     display: grid;
     place-content: center;
     min-height: 100vh;

@@ -34,7 +34,7 @@ export default function GetRecipe(props) {
             { props.loading && <p>Generating a tasty recipe for you, hang tight.</p> }
             { props.error && <p class="color-danger">Error: {props.error}</p> }
             { props.recipe && 
-                <div className="generated-recipe" ref={generatedRecipeRef}>
+                <div className="generated-recipe">
                     <h2 className="generated-recipe__title">Recommended Recipe:</h2>
                     <ReactMarkdown>{ props.recipe }</ReactMarkdown>
                     <footer className="generated-recipe__footer">
