@@ -6,7 +6,7 @@ export default function GetRecipe(props) {
         if( props.loading ) {
             return (
                 <>
-                    <span className="loader"></span> Generating..
+                    <span className="loader"></span> Generating...
                 </>
             )
         } else if( props.recipe ) {

@@ -10,6 +10,11 @@
     margin-block-end: 1rem;
     font-weight: 500;
     color: var(--white);
+    transition: all 0.2s ease;
+}
+
+.button:hover {
+    background-color: var(--color-primary-dark);
 }
 
 .button--remove {
@@ -22,4 +27,9 @@
     color: var(--color-danger);
     display: inline-block;
     margin: 0;
+}
+
+.button--remove-small:hover {
+    background: none;
+    transform: scale(1.05);
 }

@@ -1,5 +1,6 @@
 .get-recipe__box {
-    background-color: var(--color-secondary);
+    background-color: var(--color-accent);
+    color: var(--white);
     padding: 1.5rem;
     border-radius: 0.5rem;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
@@ -8,14 +9,16 @@
 
 .get-recipe__flex {
     display: flex;
-    /* align-items: center; */
     flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
     row-gap: 1rem;
     column-gap: 2rem;
 }
 
 .get-recipe__text {
-    flex: 60%
+    flex: 70%;
+    max-width: 400px;
 }
 
 .get-recipe__box p, .button {
