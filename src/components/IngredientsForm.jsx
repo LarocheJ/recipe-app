@@ -46,17 +46,19 @@ export default function ingredientsForm(props) {
                     </button>
                 </div>
             </form>
-            <p>Or select from popular ingredients:</p>
-            <div className="ingredients-form__popular">
-               {popularIngredients.map((ingredient, index) => (
-                    <button key={index} className="ingredients-form__popular-button" onClick={() => {
-                        props.setIngredients((prevIngredients) => {
-                            return [...prevIngredients, ingredient];
-                        });
-                    }}>
-                        {ingredient}
-                    </button>
-                ))}
+            <div className="ingredients-form__popular-container">
+                <p>Or select from popular ingredients:</p>
+                <div className="ingredients-form__popular">
+                    {popularIngredients.map((ingredient, index) => (
+                        <button key={index} className="ingredients-form__popular-button" onClick={() => {
+                            props.setIngredients((prevIngredients) => {
+                                return [...prevIngredients, ingredient];
+                            });
+                        }}>
+                            {ingredient}
+                        </button>
+                    ))}
+                </div>
             </div>
         </>
     );

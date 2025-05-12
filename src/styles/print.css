@@ -10,6 +10,7 @@
     .get-recipe__box,
     .generated-recipe__title,
     .generated-recipe__footer,
+    .ingredients-form__popular-container
     footer {
         display: none;
     }
