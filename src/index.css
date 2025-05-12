@@ -8,10 +8,11 @@
 @import './styles/print.css';
 
 :root {
-    --color-primary: #457b9d;
-    --color-secondary: #f1faee;
-    --color-accent: #a8dadc;
-    --color-danger: #e63946;
+    --color-primary: #81b29a;
+    --color-primary-dark: #618875;
+    --color-secondary: #f2cc8f;
+    --color-accent: #3d405b;
+    --color-danger: #e07a5f;
     --color-success: #2a9d8f;
     --color-warning: #f1faee;
     --white: #fff;
@@ -21,7 +22,7 @@
 body {
     /* background-color: var(--color-secondary); */
     /* background: hsla(0, 0%, 100%, 1); */
-    background: linear-gradient(150deg, hsla(0, 0%, 100%, 1) 0%, rgb(253, 252, 247) 50%, rgb(242, 221, 196) 100%);
+    background: linear-gradient(to left, #ece9e6, #ffffff);
     display: grid;
     place-content: center;
     min-height: 100vh;
