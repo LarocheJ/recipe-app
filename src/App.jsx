@@ -12,7 +12,6 @@ function App() {
 	const [recipe, setRecipe] = React.useState("");
 	const [loading, setLoading] = React.useState(false)
 	const [error, setError] = React.useState(null)
-	
 
 	async function handleRecipe() {
 		setLoading(true)
@@ -36,8 +35,6 @@ function App() {
             setRecipeShown(prevShown => !prevShown)
         }
     }
-
-
 
 	return(
 		<>
