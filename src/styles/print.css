@@ -14,6 +14,8 @@
     .generated-recipe__footer,
     .ingredients-form__popular-container,
     .wrapper::before,
+    .disclaimer,
+    hr,
     footer {
         display: none !important;
     }
@@ -23,5 +25,6 @@
         box-shadow: none !important;
         border-radius: 0 !important;
         padding: 1rem !important;
+        margin-block-start: 0 !important;
     }
 }

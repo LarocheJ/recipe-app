@@ -51,6 +51,7 @@ ol {
 }
 
 .wrapper {
+    margin-block-start: 10%;
     background-color: #f8f8f8;
     padding: 2rem 3rem;
     box-shadow: var(--shadow);
@@ -80,9 +81,22 @@ input {
     width: 100%;
 }
 
-@media all and (max-width: 360px) {
+@media all and (max-width: 960px) {
+    .wrapper::before {
+        display: none;
+    }
+}
+
+@media all and (max-width: 480px) {
+    body {
+        padding: 0;
+    }
+
     .wrapper {
         padding: 2rem 1.5rem;
+        box-shadow: none;
+        border-radius: 0;
+        margin-block-start: 0;
     }
 }
 
