@@ -4,6 +4,7 @@ import Footer from './components/Footer'
 import IngredientsForm from './components/IngredientsForm'
 import IngredientsList from './components/IngredientsList'
 import GetRecipe from './components/GetRecipe'
+import Disclaimer from './components/Disclaimer';
 import { generateRecipe } from './ai'
 
 function App() {
@@ -57,6 +58,7 @@ function App() {
 					/>
 				</main>
 			</div>
+			<Disclaimer />
 			<Footer />
 		</>
 	)

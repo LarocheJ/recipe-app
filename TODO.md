@@ -1,2 +1,1 @@
 - Add disclaimer that these are AI generated recipes and that it will do its best to come up with a good recipe, but will add ingredients to ensure the recipe makes sense and is tasty.
-- Add chef's hat icon and maybe some other floating cooking-related icons
