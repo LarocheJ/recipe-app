@@ -2,6 +2,7 @@
     body {
         padding: 0 !important;
         display: block !important;
+        min-height: auto !important;
     }
 
     header,
@@ -12,6 +13,7 @@
     .generated-recipe__title,
     .generated-recipe__footer,
     .ingredients-form__popular-container,
+    .wrapper::before,
     footer {
         display: none !important;
     }
