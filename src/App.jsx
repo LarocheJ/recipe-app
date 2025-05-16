@@ -46,7 +46,10 @@ function App() {
 					<GetRecipe 
 						list={ingredients} 
 						recipe={recipe} 
+						setRecipe={setRecipe} 
+						setIngredients={setIngredients} 
 						recipeShown={recipeShown} 
+						setRecipeShown={setRecipeShown} 
 						handleRecipe={handleRecipe} 
 						toggleRecipeShown={toggleRecipeShown} 
 						loading={loading} 
