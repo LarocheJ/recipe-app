@@ -13,6 +13,7 @@
     --color-primary-dark: #618875;
     --color-secondary: #f2cc8f;
     --color-accent: #3d405b;
+    --color-accent-darker: #313349;
     --color-danger: #e07a5f;
     --color-success: #2a9d8f;
     --color-warning: #f1faee;
@@ -60,8 +61,8 @@ ol {
 .wrapper::before {
     content: url('./assets/chefs-hat-icon.png');
     position: absolute;
-    top: -10%;
-    left: -9%;
+    top: -4rem;
+    left: -5rem;
     z-index: -1;
     transform: rotate(310deg) scale(0.85);
     opacity: 0.75;

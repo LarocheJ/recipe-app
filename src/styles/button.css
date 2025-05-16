@@ -11,6 +11,7 @@
     font-weight: 500;
     color: var(--white);
     transition: all 0.2s ease;
+    box-shadow: var(--shadow-small);
 }
 
 .button:hover {
@@ -27,9 +28,24 @@
     color: var(--color-danger);
     display: inline-block;
     margin: 0;
+    box-shadow: none;
 }
 
 .button--remove-small:hover {
     background: none;
-    transform: scale(1.05);
+}
+
+.button--secondary {
+    background: var(--color-accent);
+}
+
+.button--secondary:hover {
+    background: var(--color-accent-darker);
+}
+
+.button--disabled {
+    opacity: 0.95;
+    pointer-events: none;
+    box-shadow: none;
+    background-color: #a4a9a7;
 }
