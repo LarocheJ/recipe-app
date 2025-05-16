@@ -18,6 +18,8 @@
     --color-warning: #f1faee;
     --white: #fff;
     --black: #000;
+    --shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+    --shadow-small: 0 0 1rem rgba(0, 0, 0, 0.1);
 }
 
 body {
@@ -49,7 +51,7 @@ ol {
 .wrapper {
     background-color: #f8f8f8;
     padding: 2rem 3rem;
-    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.15);
+    box-shadow: var(--shadow);
     max-width: 800px;
     border-radius: 0.5rem;
     position: relative;
@@ -58,8 +60,8 @@ ol {
 .wrapper::before {
     content: url('./assets/chefs-hat-icon.png');
     position: absolute;
-    top: -4rem;
-    left: -5rem;
+    top: -10%;
+    left: -9%;
     z-index: -1;
     transform: rotate(310deg) scale(0.85);
     opacity: 0.75;
