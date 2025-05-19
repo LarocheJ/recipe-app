@@ -1,9 +1,20 @@
 export default function IngredientsList(props) {
     function removeIngredient(indexToRemove) {
+        const removedIngredient = props.list[indexToRemove];
+        
         props.setIngredients(prevIngredients => {
             return prevIngredients.filter((_, index) => index !== indexToRemove);
         })
+
+        // Re-enable the button if it was a popular ingredient
+        props.setDisabledIngredients(prevSet => {
+            const newSet = new Set(prevSet);
+            newSet.delete(removedIngredient);
+            return newSet;
+        });
     }
+
+
 
     return (
         <>

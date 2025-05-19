@@ -82,3 +82,9 @@
 .ingredients-form__popular-button:hover {
     background-color: var(--color-primary);
 }
+
+.ingredients-form__popular-button[disabled] {
+    background-color: var(--color-grey);
+    opacity: 0.65;
+    pointer-events: none;
+}

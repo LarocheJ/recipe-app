@@ -1,3 +1,5 @@
+import React from "react";
+
 export default function ingredientsForm(props) {
     function addIngredient(event) {
         event.preventDefault(); // Prevent the form from submitting and refreshing the page
@@ -16,7 +18,7 @@ export default function ingredientsForm(props) {
         }
     }
 
-    const popularIngredients = [
+    const [popularIngredients, setPopularIngredients] = React.useState([
         "chicken",
         "beef",
         "pork",
@@ -32,7 +34,15 @@ export default function ingredientsForm(props) {
         "tomatoes",
         "bell peppers",
         "zucchini"
-    ]
+    ]);
+
+    function handlePopularIngredientClick(ingredient) {
+        props.setIngredients((prevIngredients) => {
+            return [...prevIngredients, ingredient];
+        });
+        
+        props.setDisabledIngredients((prevSet) => new Set(prevSet).add(ingredient));
+    }
 
     return (
         <>
@@ -50,11 +60,12 @@ export default function ingredientsForm(props) {
                 <p>Or select from popular ingredients:</p>
                 <div className="ingredients-form__popular">
                     {popularIngredients.map((ingredient, index) => (
-                        <button key={index} className="ingredients-form__popular-button" onClick={() => {
-                            props.setIngredients((prevIngredients) => {
-                                return [...prevIngredients, ingredient];
-                            });
-                        }}>
+                        <button 
+                            key={index} 
+                            className="ingredients-form__popular-button" 
+                            onClick={() => handlePopularIngredientClick(ingredient)}
+                            title={`Add ${ingredient} to the ingredients list`}
+                            disabled={props.disabledIngredients.has(ingredient)}>
                             {ingredient}
                         </button>
                     ))}

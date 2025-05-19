@@ -6,6 +6,7 @@ export default function GetRecipe(props) {
         props.setRecipe(null)
         props.setRecipeShown(false)
         props.setIngredients([])
+        props.setDisabledIngredients(new Set())
     }
 
     function handlePrintRecipe() {

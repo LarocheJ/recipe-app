@@ -47,5 +47,5 @@
     opacity: 0.95;
     pointer-events: none;
     box-shadow: none;
-    background-color: #a4a9a7;
+    background-color: var(--color-grey);
 }

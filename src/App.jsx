@@ -13,6 +13,7 @@ function App() {
 	const [recipe, setRecipe] = React.useState("");
 	const [loading, setLoading] = React.useState(false)
 	const [error, setError] = React.useState(null)
+	const [disabledIngredients, setDisabledIngredients] = React.useState(new Set());
 
 	async function handleRecipe() {
 		setLoading(true)
@@ -42,8 +43,17 @@ function App() {
 			<div className="wrapper">
 				<Header />
 				<main>
-					<IngredientsForm setIngredients={setIngredients} />
-					<IngredientsList list={ingredients} setIngredients={setIngredients} />
+					<IngredientsForm 
+						setIngredients={setIngredients} 
+						disabledIngredients={disabledIngredients} 
+						setDisabledIngredients={setDisabledIngredients} 
+					/>
+					<IngredientsList 
+						list={ingredients} 
+						setIngredients={setIngredients} 
+						disabledIngredients={disabledIngredients} 
+						setDisabledIngredients={setDisabledIngredients} 
+					/>
 					<GetRecipe 
 						list={ingredients} 
 						recipe={recipe} 
@@ -55,6 +65,8 @@ function App() {
 						toggleRecipeShown={toggleRecipeShown} 
 						loading={loading} 
 						error={error}
+						disabledIngredients={disabledIngredients} 
+						setDisabledIngredients={setDisabledIngredients} 
 					/>
 				</main>
 			</div>
