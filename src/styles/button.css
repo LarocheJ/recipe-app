@@ -44,8 +44,7 @@
 }
 
 .button--disabled {
-    opacity: 0.95;
+    opacity: 0.75;
     pointer-events: none;
     box-shadow: none;
-    background-color: var(--color-grey);
 }
