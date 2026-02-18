@@ -4,7 +4,7 @@ export default function Footer() {
     return(
         <>
             <hr />
-            <footer className="footer"><small>©{today.getFullYear()} Recipe Generator App by Jimmy Laroche</small></footer>
+            <footer className="footer"><small>©{today.getFullYear()} Recipe Generator App by Jimmy Laroche.</small></footer>
         </>
     )
 }
